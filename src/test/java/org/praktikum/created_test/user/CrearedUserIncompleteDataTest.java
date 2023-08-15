@@ -32,7 +32,6 @@ public class CrearedUserIncompleteDataTest {
                 {"", "UserPassword", "Test"},
         };
     }
-
     @Test
     @DisplayName("Создание пользователя с неполными данными")
     @Description("Создаем пользователя незаполнив обязательные поля")

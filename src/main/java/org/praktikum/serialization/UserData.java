@@ -10,7 +10,6 @@ public class UserData {
         this.password = password;
         this.name = name;
     }
-
     public UserData() {
     }
 

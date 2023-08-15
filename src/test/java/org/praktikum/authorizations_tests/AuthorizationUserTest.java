@@ -13,7 +13,6 @@ import static org.hamcrest.CoreMatchers.equalTo;
 
 public class AuthorizationUserTest extends CleareBase {
     AuthorizationUser authorizationUser = new AuthorizationUser();
-
     @Before
     public void createdUser() {
         CreatedUser createdUser = new CreatedUser();

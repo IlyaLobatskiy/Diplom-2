@@ -18,7 +18,6 @@ public class UpdateDontAuthorizationUserTest extends CleareBase {
     public void tokenForUpdate() {
         token = "";
     }
-
     @Test
     @DisplayName("Обновление email")
     @Description("Обновление email авторизованного пользователя")

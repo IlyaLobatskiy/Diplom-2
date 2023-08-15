@@ -22,7 +22,6 @@ public class UpdateUserData extends TestData {
                 .body(json)
                 .patch(ENDPOINT_DELETE_UPDATE_GET_USER);
     }
-
     @Step("Обновление Passwor")
     public Response updatePasswordUser(String accessToken) {
         UserPassword json = new UserPassword(updatePassword);

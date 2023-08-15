@@ -23,7 +23,6 @@ public class CreatedOrderAuthoriztionUserTest extends CleareBase {
         authorizationUser.authorizationValidliUserData();
         token = authorizationUser.accessToken;
     }
-
     @Test
     @DisplayName("Создание заказа")
     @Description("Создание заказа с ингридиентами авторизованным пользователем")

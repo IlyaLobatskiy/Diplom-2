@@ -13,7 +13,6 @@ public class CreatedUser extends TestData {
 
     @Step("Создать пользователя")
     public Response createdNewUser() {
-
         UserData json = new UserData(email, password, name);
         Response user = given()
                 .header("Content-type", "application/json")
@@ -25,7 +24,6 @@ public class CreatedUser extends TestData {
         } catch (RuntimeException exception) {
             System.out.println();
         }
-
         return user;
     }
 

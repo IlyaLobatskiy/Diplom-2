@@ -38,7 +38,6 @@ public class GetUserOrderTest extends CleareBase {
                 .and()
                 .body("orders", notNullValue());
     }
-
     @Test
     @DisplayName("Получение списка заказов конкретного не авторизованного пользователя")
     @Description("Получение списка заказов конкретного не авторизованного пользователя")

@@ -23,7 +23,6 @@ public class CreatedUserTest extends CleareBase {
                 .body("success", equalTo(true));
         token = createdUser.accessToken;
     }
-
     @Test
     @DisplayName("Создание зарегистрированного пользователя")
     @Description("Создаем пользователя ранее зарегистрированного в системе")

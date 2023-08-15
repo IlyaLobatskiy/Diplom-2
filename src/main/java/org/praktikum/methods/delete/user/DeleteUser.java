@@ -15,5 +15,4 @@ public class DeleteUser extends TestData {
                 .baseUri(MY_URL)
                 .delete(ENDPOINT_DELETE_UPDATE_GET_USER);
     }
-
 }

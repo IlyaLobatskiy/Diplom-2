@@ -22,7 +22,6 @@ public class AuthorizationUser extends TestData {
         accessToken = user.body().as(ResponseBodyRegAndLogin.class).getAccessToken();
         return user;
     }
-
     @Step("Авторизация с не валидными данными")
     public Response authorizationNotValidliUserData(String email, String password) {
         AuthorizationUserData json = new AuthorizationUserData(email, password);

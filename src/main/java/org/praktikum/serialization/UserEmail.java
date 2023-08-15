@@ -9,7 +9,6 @@ public class UserEmail {
 
     public UserEmail() {
     }
-
     public String getEmail() {
         return email;
     }

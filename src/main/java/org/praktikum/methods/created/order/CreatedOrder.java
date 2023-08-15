@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import static io.restassured.RestAssured.given;
 
 public class CreatedOrder extends TestData {
-    @Step
+    @Step("Создание заказа")
     public Response createdOrder(String accessToken) {
         OrderData json = new OrderData(ingredientsList);
 
@@ -22,7 +22,7 @@ public class CreatedOrder extends TestData {
                 .post(ENDPOINT_CREATED_AND_GET_ORDER);
     }
 
-    @Step
+    @Step("Создание заказа с пустым списком ингридиентов")
     public Response createdOrderEmptyIngredientsList(String accessToken) {
         OrderData json = new OrderData(new ArrayList<>());
 
@@ -34,7 +34,7 @@ public class CreatedOrder extends TestData {
                 .post(ENDPOINT_CREATED_AND_GET_ORDER);
     }
 
-    @Step
+    @Step("Создание заказа с невалидными ингредиентами")
     public Response createdOrderDontValidliIngredientsList(String accessToken) {
         OrderData json = new OrderData(dontValidliIngredientsList);
 

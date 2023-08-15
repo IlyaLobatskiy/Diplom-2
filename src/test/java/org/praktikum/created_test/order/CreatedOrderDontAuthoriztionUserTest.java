@@ -37,7 +37,6 @@ public class CreatedOrderDontAuthoriztionUserTest extends CleareBase {
                 .and()
                 .body("message", equalTo("Ingredient ids must be provided"));
     }
-
     @Test
     @DisplayName("Создание заказа c невалидным списком ингридиентов")
     @Description("Создание заказа c невалидным списком ингридиентами не авторизованным пользователем")

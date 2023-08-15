@@ -10,7 +10,6 @@ public abstract class TestData {
     protected final static String ENDPOINT_NEW_USER = "/api/auth/register";
     protected final static String ENDPOINT_DELETE_UPDATE_GET_USER = "/api/auth/user";
     protected final static String ENDPOINT_CREATED_AND_GET_ORDER = "/api/orders";
-
     protected static String email = "ilyalobackiy@yandex.ru";
     protected static String password = "Qwerty54321";
     protected static String name = "ilyalobackiy";

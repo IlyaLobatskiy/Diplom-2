@@ -24,7 +24,6 @@ public class UpdateAuthorizationUserTest extends CleareBase {
         user.authorizationValidliUserData();
         token = user.accessToken;
     }
-
     @Test
     @DisplayName("Обновление email")
     @Description("Обновление email авторизованного пользователя")

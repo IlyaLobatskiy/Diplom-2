@@ -5,7 +5,6 @@ public class ResponseBodyRegAndLogin {
     private String accessToken;
     private String refreshToken;
     private User user;
-
     public boolean isSuccess() {
         return success;
     }
@@ -13,7 +12,6 @@ public class ResponseBodyRegAndLogin {
     public void setSuccess(boolean success) {
         this.success = success;
     }
-
     public String getAccessToken() {
         return accessToken;
     }

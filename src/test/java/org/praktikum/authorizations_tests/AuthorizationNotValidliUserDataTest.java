@@ -15,7 +15,6 @@ public class AuthorizationNotValidliUserDataTest {
     private final String email;
     private final String password;
     AuthorizationUser user = new AuthorizationUser();
-
     public AuthorizationNotValidliUserDataTest(String email, String password) {
         this.email = email;
         this.password = password;
