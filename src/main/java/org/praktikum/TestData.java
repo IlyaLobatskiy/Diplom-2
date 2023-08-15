@@ -17,6 +17,6 @@ public abstract class TestData {
     protected static String updateEmail = "TestTestov@yandex.ru";
     protected static String updatePassword = "Qwerty";
     protected static String updateName = "Test";
-    protected static List<String> ingredientsList = new ArrayList<>(Arrays.asList("61c0c5a71d1f82001bdaaa6d","61c0c5a71d1f82001bdaaa70", "61c0c5a71d1f82001bdaaa74", "61c0c5a71d1f82001bdaaa6d"));
+    protected static List<String> ingredientsList = new ArrayList<>(Arrays.asList("61c0c5a71d1f82001bdaaa6d", "61c0c5a71d1f82001bdaaa70", "61c0c5a71d1f82001bdaaa74", "61c0c5a71d1f82001bdaaa6d"));
     protected static List<String> dontValidliIngredientsList = new ArrayList<>(Arrays.asList("sdfasf", "asdfasf"));
 }

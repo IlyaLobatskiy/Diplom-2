@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 
 public class CreatedOrder extends TestData {
     @Step
-    public Response createdOrder(String accessToken){
+    public Response createdOrder(String accessToken) {
         OrderData json = new OrderData(ingredientsList);
 
         return given()
@@ -23,7 +23,7 @@ public class CreatedOrder extends TestData {
     }
 
     @Step
-    public Response createdOrderEmptyIngredientsList(String accessToken){
+    public Response createdOrderEmptyIngredientsList(String accessToken) {
         OrderData json = new OrderData(new ArrayList<>());
 
         return given()
@@ -35,7 +35,7 @@ public class CreatedOrder extends TestData {
     }
 
     @Step
-    public Response createdOrderDontValidliIngredientsList(String accessToken){
+    public Response createdOrderDontValidliIngredientsList(String accessToken) {
         OrderData json = new OrderData(dontValidliIngredientsList);
 
         return given()

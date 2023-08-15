@@ -21,7 +21,7 @@ public class CreatedOrderDontAuthoriztionUserTest extends CleareBase {
     @Test
     @DisplayName("Создание заказа")
     @Description("Создание заказа с ингридиентами не авторизованным пользователем")
-    public void createdValidliOrder(){
+    public void createdValidliOrder() {
         order.createdOrder(token)
                 .then().statusCode(SC_OK)
                 .and()
@@ -31,16 +31,17 @@ public class CreatedOrderDontAuthoriztionUserTest extends CleareBase {
     @Test
     @DisplayName("Создание заказа без ингридиентов")
     @Description("Создание заказа без ингридиентами не авторизованным пользователем")
-    public void createdDontValidliOrder(){
+    public void createdDontValidliOrder() {
         order.createdOrderEmptyIngredientsList(token)
                 .then().statusCode(SC_BAD_REQUEST)
                 .and()
                 .body("message", equalTo("Ingredient ids must be provided"));
     }
+
     @Test
     @DisplayName("Создание заказа c невалидным списком ингридиентов")
     @Description("Создание заказа c невалидным списком ингридиентами не авторизованным пользователем")
-    public void createdDontValidliIngredientsListTest(){
+    public void createdDontValidliIngredientsListTest() {
         order.createdOrderDontValidliIngredientsList(token)
                 .then().statusCode(SC_INTERNAL_SERVER_ERROR);
     }

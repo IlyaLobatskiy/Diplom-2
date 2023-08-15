@@ -22,16 +22,17 @@ public class GetUserOrderTest extends CleareBase {
     AuthorizationUser authorizationUser = new AuthorizationUser();
 
     @Before
-    public void testUser(){
+    public void testUser() {
         user.createdNewUser();
         authorizationUser.authorizationValidliUserData();
         token = authorizationUser.accessToken;
         order.createdOrder(token);
     }
+
     @Test
     @DisplayName("Получение списка заказов конкретного пользователя")
     @Description("Получение списка заказов конкретного авторизованного пользователя")
-    public void getAuthorizationUserOrdersTest(){
+    public void getAuthorizationUserOrdersTest() {
         getUserOrder.getOrdersUser(token)
                 .then().assertThat().statusCode(SC_OK)
                 .and()
@@ -41,7 +42,7 @@ public class GetUserOrderTest extends CleareBase {
     @Test
     @DisplayName("Получение списка заказов конкретного не авторизованного пользователя")
     @Description("Получение списка заказов конкретного не авторизованного пользователя")
-    public void getDontAuthorizationUserOrdersTest(){
+    public void getDontAuthorizationUserOrdersTest() {
         getUserOrder.getOrdersUser("")
                 .then().assertThat().statusCode(SC_UNAUTHORIZED)
                 .and()

@@ -15,7 +15,6 @@
         <aspectj.version>1.9.7</aspectj.version>
         <allure.version>2.15.0</allure.version>
     </properties>
-
     <build>
         <pluginManagement>
             <plugins>

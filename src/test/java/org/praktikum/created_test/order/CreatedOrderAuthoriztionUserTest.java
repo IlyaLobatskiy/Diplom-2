@@ -18,7 +18,7 @@ public class CreatedOrderAuthoriztionUserTest extends CleareBase {
     AuthorizationUser authorizationUser = new AuthorizationUser();
 
     @Before
-    public void testUser(){
+    public void testUser() {
         user.createdNewUser();
         authorizationUser.authorizationValidliUserData();
         token = authorizationUser.accessToken;
@@ -27,7 +27,7 @@ public class CreatedOrderAuthoriztionUserTest extends CleareBase {
     @Test
     @DisplayName("Создание заказа")
     @Description("Создание заказа с ингридиентами авторизованным пользователем")
-    public void createdValidliOrderTest(){
+    public void createdValidliOrderTest() {
         order.createdOrder(token)
                 .then().statusCode(SC_OK)
                 .and()
@@ -37,7 +37,7 @@ public class CreatedOrderAuthoriztionUserTest extends CleareBase {
     @Test
     @DisplayName("Создание заказа без ингридиентов")
     @Description("Создание заказа без ингридиентами авторизованным пользователем")
-    public void createdDontValidliOrderTest(){
+    public void createdDontValidliOrderTest() {
         order.createdOrderEmptyIngredientsList(token)
                 .then().statusCode(SC_BAD_REQUEST)
                 .and()
@@ -47,7 +47,7 @@ public class CreatedOrderAuthoriztionUserTest extends CleareBase {
     @Test
     @DisplayName("Создание заказа c невалидным списком ингридиентов")
     @Description("Создание заказа c невалидным списком ингридиентами авторизованным пользователем")
-    public void createdDontValidliIngredientsListTest(){
+    public void createdDontValidliIngredientsListTest() {
         order.createdOrderDontValidliIngredientsList(token)
                 .then().statusCode(SC_INTERNAL_SERVER_ERROR);
     }
