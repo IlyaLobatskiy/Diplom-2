@@ -9,6 +9,7 @@ public class UserName {
 
     public UserName() {
     }
+
     public String getName() {
         return name;
     }

@@ -2,7 +2,7 @@ package org.praktikum.methods.delete.user;
 
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
-import org.praktikum.TestData;
+import org.praktikum.test.data.TestData;
 
 import static io.restassured.RestAssured.given;
 

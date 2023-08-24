@@ -2,17 +2,20 @@ package org.praktikum.methods.created.order;
 
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
-import org.praktikum.TestData;
+import org.praktikum.methods.get.order.GetIngredients;
 import org.praktikum.serialization.OrderData;
+import org.praktikum.test.data.TestData;
 
 import java.util.ArrayList;
 
 import static io.restassured.RestAssured.given;
 
 public class CreatedOrder extends TestData {
+    GetIngredients getIngredients = new GetIngredients();
+
     @Step("Создание заказа")
     public Response createdOrder(String accessToken) {
-        OrderData json = new OrderData(ingredientsList);
+        OrderData json = new OrderData(getIngredients.getIdIngredients());
 
         return given()
                 .header("Content-type", "application/json")

@@ -11,6 +11,7 @@ public class OrderData {
 
     public OrderData() {
     }
+
     public List<String> getIngredients() {
         return ingredients;
     }

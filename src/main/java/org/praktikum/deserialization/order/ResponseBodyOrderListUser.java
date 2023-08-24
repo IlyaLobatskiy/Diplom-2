@@ -10,9 +10,11 @@ public class ResponseBodyOrderListUser {
     public List<Orders> getOrders() {
         return orders;
     }
+
     public void setOrders(List<Orders> orders) {
         this.orders = orders;
     }
+
     public int getTotal() {
         return total;
     }
