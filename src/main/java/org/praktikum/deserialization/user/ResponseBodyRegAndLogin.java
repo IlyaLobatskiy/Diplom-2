@@ -1,7 +1,5 @@
 package org.praktikum.deserialization.user;
 
-import org.praktikum.deserialization.user.User;
-
 public class ResponseBodyRegAndLogin {
     private boolean success;
     private String accessToken;

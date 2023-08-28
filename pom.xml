@@ -3,11 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>org.example</groupId>
     <artifactId>Diplom-2</artifactId>
     <version>1.0-SNAPSHOT</version>
-
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
@@ -15,7 +13,6 @@
         <aspectj.version>1.9.7</aspectj.version>
         <allure.version>2.15.0</allure.version>
     </properties>
-
     <build>
         <pluginManagement>
             <plugins>
@@ -69,7 +66,6 @@
             </plugins>
         </pluginManagement>
     </build>
-
     <dependencies>
         <dependency>
             <groupId>io.qameta.allure</groupId>
@@ -101,6 +97,15 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.13.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>3.12.4</version>
+        </dependency>
     </dependencies>
-
 </project>
